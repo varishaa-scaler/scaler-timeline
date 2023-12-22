@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+          padding: 20px;
+        }
+
+        .timeline {
+            margin: 20px;
+        }
+
+        .timeline__line {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 2px;
+          height: 100%;
+          background-color: #333;
+          transform: translateX(-50%);
+        }
+
+        .step {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-left: 155px;
+          padding-right:25px;
+          padding-top: 40px;
+    
+        }
+
+        .step__date {
+        display: flex;
+        justify-content: flex-start;
+        flex-shrink: 0; 
+      }
+
+        .step__marker {
+          content: '';
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 50%;
+          background-color: green;
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+        .step__line {
+          content: '';
+          position: absolute;
+          left: calc(52% - 6px); 
+          width: 4px;
+          height: 30%;
+          background-color: red;
+          z-index: 0;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        .step__content {
+          flex: 1;
+          padding-left: 80px; 
+          position: absolute;
+          left: 50%;
+          margin-top: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="timeline">
+      <div class="step">
+        <p class="step__date">24 November</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Appear on both days</h3>
+     
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">20th November</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Preleiminary results announced</h3>
+ 
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">17 to 19th November</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+
+          <h3>Schedule online interview</h3>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">17 to 19th November</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Online personal interview</h3>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">1st November</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Final results announced.</h3>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">29th October</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Onboarding</h3>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">22 to 27th October 2020</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Schedule first session</h3>
+        </div>
+      </div>
+
+      <div class="step">
+        <p class="step__date">28th October 2019</h3>
+        <div class="step__marker"></div>
+        <div class="step__line"></div>
+        <div class="step__content">
+          <h3>Scaler Day 1</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
